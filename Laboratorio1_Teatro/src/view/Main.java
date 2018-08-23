@@ -19,7 +19,7 @@ public class Main {
 					JOptionPane.INFORMATION_MESSAGE);
 			fileira = Integer.parseInt(JOptionPane.showInputDialog("Fileira"));
 			assento = Integer.parseInt(JOptionPane.showInputDialog("Cadeira"));
-			inteira = JOptionPane.showConfirmDialog(null, "Ingresso pre�o cheio?", "Ingressos do Teatro POO",
+			inteira = JOptionPane.showConfirmDialog(null, "Ingresso pre�o cheio?", "Ingressos do Teatro POO",
 					JOptionPane.YES_NO_OPTION);
 			if (inteira == JOptionPane.YES_OPTION) {
 				vendeu = vendas.novaVenda(fileira, assento, Vendas.INTEIRA);
@@ -30,7 +30,7 @@ public class Main {
 				JOptionPane.showMessageDialog(null, "Cadeira ocupada", "Ingresso do Teatro POO",
 						JOptionPane.ERROR_MESSAGE);
 			} else {
-				JOptionPane.showMessageDialog(null, "Bom espet�culo", "Ingresso do Teatro POO",
+				JOptionPane.showMessageDialog(null, "Bom espet�culo", "Ingresso do Teatro POO",
 						JOptionPane.WARNING_MESSAGE);
 			}
 		} while (JOptionPane.showConfirmDialog(null, "Deseja encerrar o sistema?", "Ingressos do Teatro POO",
@@ -40,4 +40,14 @@ public class Main {
 				"Teatro POO", JOptionPane.INFORMATION_MESSAGE);
 
 	}
+	/*
+	 * Não há instancia do ingresso isento.
+	 * 
+	 * Não implementou-se o contador de cadediras disponíveis.
+	 * 
+	 * Ao executar o projeto não foi possível a venda de nenhuma cadeira, sempre é apresentada
+	 * a mensagem que a cadeira está ocupada, mesmo sem nenhuma venda.
+	 * 
+	 * Nota: 5,0
+	 */
 }
